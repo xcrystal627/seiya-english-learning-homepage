@@ -1,0 +1,306 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.section-voice {
+    background: url(./../img/voice-background.png) center no-repeat;
+    background-size: cover;
+    padding-top: 68px;
+    padding-bottom: 172px;
+    @include sp {
+        padding-top: 40px;
+        padding-bottom: 93px;
+        background: $green;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 1200px;
+        color: #fff;
+        @include pc {
+            padding: 0 40px;
+        }
+        .voice-pack {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 106px;
+            height: 106px;
+            @include sp {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .voice-ttl {
+            margin-top: 15px;
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: bold;
+            font-family: NotoSans;
+            text-align: center;
+            @include sp {
+                margin-top: 0;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+        .voice-list {
+            margin-top: 75px;
+            .voice-items {
+                display: flex;
+                justify-content: center;
+                @include md {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .voice-item {
+                    width: 564px;
+                    height: 305px;
+                    padding: 0 50px;
+                    background-color: #fff;
+                    border-bottom-right-radius: 65px;
+                    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+                    @include pc {
+                        width: 832rem;
+                        height: 450rem;
+                        padding: 0 40rem;
+                        border-bottom-right-radius: 65rem;
+                    }
+                    @include md {
+                        width: 1200rem;
+                        height: 670rem;
+                    }
+                    @include sp {
+                        padding: 0 38px;
+                        width: 351px;
+                        height: 218px;
+                        border-bottom-right-radius: 50px;
+                    }
+                    .item-ttl {
+                        margin-top: 20px;
+                        display: flex;
+                        justify-content: start;
+                        @include pc {
+                            margin-top: 30rem;
+                        }
+                        @include sp {
+                            margin-top: 23px;
+                        }
+                        .ttl-pack {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .f-img {
+                                width: 122px;
+                                height: 64px;
+                                @include pc {
+                                    width: 200rem;
+                                    height: 100rem;
+                                }
+                                @include md {
+                                    width: 330rem;
+                                    height: 170rem;
+                                }
+                                @include sp {
+                                    width: 90px;
+                                    height: 47px;
+                                }
+                            }
+                            .s-img {
+                                width: 78px;
+                                height: 78px;
+                                @include pc {
+                                    width: 120rem;
+                                    height: 120rem;
+                                }
+                                @include md {
+                                    width: 150rem;
+                                    height: 150rem;
+                                }
+                                @include sp {
+                                    width: 51px;
+                                    height: 51px;
+                                }
+                            }
+                            .t-img {
+                                width: 135px;
+                                height: 41px;
+                                @include pc {
+                                    width: 220rem;
+                                    height: 66rem;
+                                }
+                                @include md {
+                                    width: 352rem;
+                                    height: 106rem;
+                                }
+                                @include sp {
+                                    width: 92px;
+                                    height: 28px;
+                                }
+                            }
+                            .fo-img {
+                                width: 135px;
+                                height: 38px;
+                                @include pc {
+                                    width: 220rem;
+                                    height: 60rem;
+                                }
+                                @include md {
+                                    width: 330rem;
+                                    height: 90rem;
+                                }
+                                @include sp {
+                                    width: 125px;
+                                    height: 36px;
+                                }
+                            }
+                        }
+                        .ttl-ttl {
+                            margin-left: 20px;
+                            font-family: "NotoSans";
+                            font-weight: 500;
+                            font-size: 24px;
+                            line-height: 36px;
+                            color: #313131;
+                            @include pc {
+                                margin-left: 35rem;
+                                font-size: 36rem;
+                                line-height: 50rem;
+                            }
+                            @include md {
+                                margin-left: 55rem;
+                                font-size: 60rem;
+                                line-height: 80rem;
+                            }
+                            @include sp {
+                                margin-left: 23px;
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+                        .ml-150 {
+                            margin-left: 113px;
+                            @include pc {
+                                margin-left: 150rem;
+                            }
+                            @include sp {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                    .ttl-desc {
+                        margin-top: 21px;
+                        font-family: "NotoSans";
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: #313131;
+                        @include pc {
+                            margin-top: 28rem;
+                            font-size: 22rem;
+                        }
+                        @include md {
+                            margin-top: 40rem;
+                            font-size: 35rem;
+                        }
+                        @include sp {
+                            margin-top: 24px;
+                            font-size: 14px;
+                            font-family: HiraganoSans;
+                        }
+                        .sp-hidden {
+                            @include sp {
+                                display: none;
+                            }
+                        }
+                    }
+                    .voice-detail {
+                        margin-top: 35px;
+                        @include pc {
+                            margin-top: 45rem;
+                        }
+                        @include md {
+                            margin-top: 60rem;
+                        }
+                        @include sp {
+                            display: none;
+                        }
+                        .detail-item {
+                            display: flex;
+                            justify-content: start;
+                            .detail-ttl {
+                                font-family: "NotoSans";
+                                font-weight: 500;
+                                font-size: 14px;
+                                color: #313131;
+                                width: 100px;
+                                @include pc {
+                                    font-size: 20rem;
+                                    width: 150rem;
+                                }
+                                @include md {
+                                    font-size: 33rem;
+                                    width: 280rem;
+                                }
+                            }
+                            .desc {
+                                margin-left: 20px;
+                                font-family: "NotoSans";
+                                font-weight: 500;
+                                font-size: 14px;
+                                color: #313131;
+                                @include pc {
+                                    margin-left: 30rem;
+                                    font-size: 20rem;
+                                }
+                                @include md {
+                                    margin-left: 20rem;
+                                    font-size: 30rem;
+                                }
+                            }
+                            .desc-small {
+                                width: calc( 100% - 140px);
+                                margin-left: 20px;
+                                font-size: 10px;
+                                line-height: 15px;
+                                color: #313131;
+                                @include pc {
+                                    margin-left: 30rem;
+                                    width: calc( 100% - 250rem);
+                                    font-size: 15rem;
+                                    line-height: 25rem;
+                                }
+                                @include md {
+                                    margin-left: 30rem;
+                                    width: calc( 100% - 280rem);
+                                    font-size: 27rem;
+                                    line-height: 35rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ml-72 {
+                    margin-left: 72px;
+                    @include pc {
+                        margin-left: 70rem;
+                    }
+                    @include md {
+                        margin-left: 0;
+                        margin-top: 50rem;
+                    }
+                    @include sp {
+                        margin-top: 18px;
+                    }
+                }
+            }
+            .mt-67 {
+                margin-top: 67px;
+                @include pc {
+                    margin-top: 100rem;
+                }
+                @include sp {
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+}

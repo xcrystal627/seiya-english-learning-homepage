@@ -1,0 +1,61 @@
+    // -----------------------------------------------------------------------------
+    // This file contains all styles related to the footer of the site/application.
+    // -----------------------------------------------------------------------------
+    footer {
+        .footer-pc {
+            padding: 33px 0;
+            color: #fff;
+            background: $green;
+            font-family: "NotoSans";
+            font-weight: bold;
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            @include md {
+                display: none;
+            }
+        }
+        .footer-md {
+            background: $green;
+            display: none;
+            padding-top: 67px;
+            padding-bottom: 21px;
+            .logo {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+            }
+            .information {
+                margin-top: 34px;
+                font-family: "DNP";
+                font-weight: normal;
+                font-size: 11px;
+                letter-spacing: 0.05em;
+                line-height: 20px;
+                text-align: center;
+                color: #fff;
+            }
+            .contact-img {
+                display: flex;
+                justify-content: center;
+                margin-top: 33px;
+                img {
+                    width: 121px;
+                    height: 24px;
+                }
+            }
+            .ttl {
+                margin-top: 40px;
+                font-family: "DNP";
+                font-weight: normal;
+                font-size: 9px;
+                letter-spacing: 0.05em;
+                line-height: 29px;
+                text-align: center;
+                color: #fff;
+            }
+            @include md {
+                display: block;
+            }
+        }
+    }

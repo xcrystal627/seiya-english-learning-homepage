@@ -1,0 +1,373 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+$merit-green:#dff4e3;
+.section-reason {
+    padding-top: 83px;
+    padding-bottom: 274px;
+    @include pc {
+        padding-top: 100rem;
+    }
+    @include tb {
+        padding-top: 200rem;
+    }
+    @include sp {
+        padding-top: 125px;
+        padding-bottom: 100px;
+    }
+    overflow-x: clip;
+    .reason-ttl {
+        .ttl-top {
+            font-size: 38px;
+            line-height: 50px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            color: $letter;
+            font-family: "NotoSans";
+            font-weight: 500;
+            span {
+                background: linear-gradient(transparent 60%, $green 0%);
+            }
+            @include pc {
+                font-size: 50rem;
+                line-height: 70rem;
+            }
+            @include sp {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .ttl-bottom {
+            margin-top: 80px;
+            @include pc {
+                // margin-top: 80rem;
+            }
+            @include sp {
+                margin-top: 77px;
+            }
+            .ttl-pack {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                @include sp {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .main-ttl {
+                margin-top: 46px;
+                font-size: 30px;
+                line-height: 30px;
+                letter-spacing: 0.1em;
+                text-align: center;
+                color: $green;
+                font-family: "NotoSans";
+                font-weight: bold;
+                @include tb {
+                    margin-top: 90rem;
+                    font-size: 50rem;
+                    line-height: 70rem;
+                }
+                @include sp {
+                    margin-top: 7px;
+                    font-size: 17px;
+                    line-height: 28px;
+                }
+            }
+            .under-line {
+                margin: 23px auto 0;
+                border: 1.5px solid $green;
+                width: 91px;
+                @include tb {
+                    margin-top: 30rem;
+                    width: 130rem;
+                }
+                @include sp {
+                    margin-top: 7px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+    .merit-list {
+        .merit-right__pc {
+            position: relative;
+            @include tb {
+                display: none;
+            }
+            .merit-green__background {
+                position: absolute;
+                left: 515px;
+                width: 100%;
+                height: 424px;
+                background: $merit-green;
+                clip-path: polygon(16.8% 0, 100% 0%, 100% 100%, 0% 100%);
+            }
+            .img-pack {
+                margin-top: 137px;
+                position: relative;
+                .merit-desc {
+                    position: absolute;
+                    left: 508px;
+                    top: 95px;
+                    @include pc {
+                        left: 700rem;
+                    }
+                    .desc-ttl {
+                        font-family: "Acumin";
+                        font-weight: 600;
+                        font-size: 39px;
+                        letter-spacing: 0.05em;
+                        line-height: 40px;
+                        color: $green;
+                        text-transform: uppercase;
+                    }
+                    .desc-small__ttl {
+                        padding-left: 40px;
+                        font-size: 20px;
+                        letter-spacing: 0.05em;
+                        line-height: 34px;
+                        color: $letter;
+                        font-family: "DNP";
+                        font-weight: normal;
+                    }
+                    .desc-desc {
+                        width: 510px;
+                        padding-left: 40px;
+                        margin-top: 30px;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: $letter;
+                        font-family: "DNP";
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+        .merit-right__tb {
+            display: none;
+            margin-top: 50px;
+            position: relative;
+            @include tb {
+                display: block;
+            }
+            .merit-green__background {
+                position: absolute;
+                left: 400rem;
+                width: 100%;
+                height: 300px;
+                background: $merit-green;
+                clip-path: polygon(16.8% 0, 100% 0%, 100% 100%, 0% 100%);
+                z-index: -999;
+                @include sp {
+                    left: 40px;
+                    height: 225px;
+                }
+            }
+            .merit-desc {
+                .desc-ttl {
+                    font-family: "Acumin";
+                    font-weight: bold;
+                    font-size: 39px;
+                    letter-spacing: 0.05em;
+                    line-height: 40px;
+                    color: $green;
+                    text-transform: uppercase;
+                }
+                .desc-small__ttl {
+                    padding-left: 40px;
+                    font-size: 20px;
+                    letter-spacing: 0.05em;
+                    line-height: 34px;
+                    color: $letter;
+                    font-family: "DNP";
+                    font-weight: normal;
+                    @include sp {
+                        margin-top: -5px;
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+                .desc-desc {
+                    width: 500px;
+                    padding-left: 40px;
+                    margin-top: 30px;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: $letter;
+                    font-family: HiraginoSans;
+                    font-weight: normal;
+                    @include sp {
+                        margin-top: 24px;
+                        font-size: 12px;
+                        line-height: 15px;
+                        width: 350px;
+                    }
+                }
+            }
+            .img-pack {
+                margin-top: 43px;
+                margin-left: 40px;
+                margin-right: 40px;
+                img {
+                    width: 550px;
+                    @include sp {
+                        width: 365px;
+                    }
+                }
+            }
+        }
+        .merit-left__pc {
+            position: relative;
+            @include tb {
+                display: none;
+            }
+            .merit-green__background {
+                position: absolute;
+                left: -44%;
+                width: 1140px;
+                height: 424px;
+                background: $merit-green;
+                clip-path: polygon(0 0, 100% 0%, 81.4% 100%, 0% 100%);
+                @include pc {
+                    width: 1350rem;
+                }
+            }
+            .img-pack {
+                margin-top: 137px;
+                position: relative;
+                // .right-pack {}
+                .merit-desc {
+                    position: absolute;
+                    top: 87px;
+                    left: 105px;
+                    @include pc {
+                        left: 100rem;
+                    }
+                    .desc-ttl {
+                        font-family: "Acumin";
+                        font-weight: 600;
+                        font-size: 39px;
+                        letter-spacing: 0.05em;
+                        line-height: 40px;
+                        color: $green;
+                        text-transform: uppercase;
+                    }
+                    .desc-small__ttl {
+                        padding-left: 40px;
+                        font-size: 20px;
+                        letter-spacing: 0.05em;
+                        line-height: 34px;
+                        color: $letter;
+                        font-family: "DNP";
+                        font-weight: normal;
+                    }
+                    .desc-desc {
+                        width: 485px;
+                        padding-left: 40px;
+                        margin-top: 30px;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: $letter;
+                        font-family: "DNP";
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+        .merit-left__tb {
+            display: none;
+            margin-top: 50px;
+            position: relative;
+            @include tb {
+                display: block;
+            }
+            .merit-green__background {
+                position: absolute;
+                left: -10%;
+                width: 100%;
+                height: 300px;
+                background: $merit-green;
+                clip-path: polygon(0 0, 100% 0%, 81.4% 100%, 0% 100%);
+                z-index: -999;
+                @include sp {
+                    left: -15%;
+                    height: 225px;
+                }
+            }
+            .merit-desc {
+                .desc-ttl {
+                    font-family: "Acumin";
+                    font-weight: bold;
+                    font-size: 39px;
+                    letter-spacing: 0.05em;
+                    line-height: 40px;
+                    color: $green;
+                    text-transform: uppercase;
+                }
+                .desc-small__ttl {
+                    padding-left: 40px;
+                    font-size: 20px;
+                    letter-spacing: 0.05em;
+                    line-height: 34px;
+                    color: $letter;
+                    font-family: "DNP";
+                    font-weight: normal;
+                    @include sp {
+                        margin-top: -5px;
+                        font-size: 12px;
+                        line-height: 12px;
+                    }
+                }
+                .desc-desc {
+                    width: 500px;
+                    padding-left: 40px;
+                    margin-top: 30px;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: $letter;
+                    font-family: HiraginoSans;
+                    font-weight: normal;
+                    .small-desc {
+                        font-size: 8px;
+                        line-height: 10px;
+                    }
+                    @include sp {
+                        width: auto;
+                        margin-top: 24px;
+                        padding-right: 40px;
+                        font-size: 12px;
+                        line-height: 15px;
+                        width: auto;
+                    }
+                }
+            }
+            .img-pack {
+                margin-top: 43px;
+                display: flex;
+                justify-content: end;
+                margin-right: 40px;
+                img {
+                    width: 550px;
+                    @include sp {
+                        width: 365px;
+                    }
+                }
+            }
+        }
+        .mt-90 {
+            margin-top: 90px;
+            @include tb {
+                margin-top: 130rem;
+            }
+        }
+    }
+    .container {
+        @include pc {
+            padding: 0 40px;
+        }
+        @include sp {
+            padding: 0;
+        }
+    }
+}

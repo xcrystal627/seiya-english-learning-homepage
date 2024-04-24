@@ -1,0 +1,57 @@
+$sp: 550px;
+$md: 750px;
+$tb: 992px;
+$lp: 1200px;
+$pc: 1444px;
+$dt: 1600px;
+@mixin dt {
+    @media (max-width: $dt) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (max-width: $pc) {
+        @content;
+    }
+}
+
+@mixin lp {
+    @media (max-width: $lp) {
+        @content;
+    }
+}
+
+@mixin tb {
+    @media (max-width: $tb) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: $sp) {
+        @content;
+    }
+}
+
+html {
+    font-size: calc(100vw / 1920);
+}
+
+.container {
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// @media (max-width: 1400px) {
+//     .container {
+//         margin: 0 25px;
+//     }
+// }

@@ -1,0 +1,176 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.section-experience {
+    padding-bottom: 485px;
+    @include pc {
+        padding-bottom: 700rem;
+    }
+    @include sp {
+        padding-bottom: 300px;
+    }
+    .background-img {
+        position: relative;
+        background: url('/assets/img/ex-background.png') center no-repeat;
+        background-size: cover;
+        height: 576px;
+        @include pc {
+            height: 700rem;
+        }
+        @include sp {
+            height: 229px;
+        }
+    }
+    .experience-content {
+        position: absolute;
+        top: 230px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        box-shadow: 0px 3px 6px #8F8F8F;
+        border-radius: 95px;
+        width: 1074px;
+        height: 735px;
+        @include pc {
+            top: 300rem;
+            width: 1500rem;
+            height: 1000rem;
+            border-radius: 100rem;
+        }
+        @include sp {
+            top: 115px;
+            width: 346px;
+            height: 356px;
+            border-radius: 20px;
+        }
+        .book-pack {
+            margin: 58px auto 0;
+            display: flex;
+            justify-content: center;
+            @include pc {
+                margin-top: 70rem;
+                width: 150rem;
+            }
+            @include sp {
+                margin-top: 41px;
+                width: 60px;
+            }
+        }
+        .experience-ttl {
+            margin-top: 10px;
+            font-size: 30px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            color: $green;
+            font-family: "NotoSans";
+            font-weight: bold;
+            @include pc {
+                font-size: 45rem;
+            }
+            @include sp {
+                margin-top: 0;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+        .under-line {
+            margin: 20px auto 0;
+            border: 1.5px solid $green;
+            width: 91px;
+            @include tb {
+                margin-top: 30rem;
+                width: 130rem;
+            }
+            @include sp {
+                display: none;
+            }
+        }
+        .experience-desc {
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center;
+            color: $green;
+            font-family: "NotoSans";
+            font-weight: 500;
+            @include pc {
+                margin-top: 30rem;
+                font-size: 35rem;
+            }
+            @include sp {
+                display: none;
+            }
+        }
+        .experience-pack {
+            margin-top: 43px;
+            display: flex;
+            justify-content: center;
+            @include pc {
+                margin-top: 60rem;
+                img {
+                    width: 700rem;
+                }
+            }
+            @include sp {
+                img {
+                    width: 290px;
+                    height: 104px;
+                }
+                margin-top: 39px;
+            }
+        }
+        .click-here {
+            margin: 60px auto 0;
+            width: 279px;
+            height: 59px;
+            font-family: "NotoSans";
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+            border-radius: 20px;
+            background: $green;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            color: #fff;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 30px;
+            position: relative;
+            @include pc {
+                margin: 80rem auto 0;
+                width: 400rem;
+                height: 90rem;
+                border-radius: 30rem;
+                font-size: 30rem;
+                line-height: 35rem;
+                padding-left: 23rem;
+            }
+            @include sp {
+                margin-top: 34px;
+                padding-left: 24px;
+                width: 188px;
+                height: 40px;
+                font-size: 12px;
+                line-height: 12px;
+                border-radius: 10px;
+            }
+            .play-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 19px;
+                width: 22px;
+                height: 22px;
+                @include pc {
+                    width: 30rem;
+                    height: 30rem;
+                    right: 30rem;
+                }
+                @include sp {
+                    width: 14px;
+                    height: 14px;
+                    right: 13px;
+                }
+            }
+        }
+    }
+}

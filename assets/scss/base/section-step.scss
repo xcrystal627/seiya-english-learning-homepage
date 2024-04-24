@@ -1,0 +1,160 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.section-step {
+    padding-bottom: 75px;
+    @include sp {
+        padding-bottom: 45px;
+    }
+    .container {
+        @include pc {
+            padding: 20px;
+        }
+        @include md {
+            padding: 0;
+        }
+        .step-pack {
+            padding-top: 78px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 106px;
+                height: 106px;
+                @include sp {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            @include pc {
+                padding-top: 80rem;
+            }
+            @include sp {
+                padding-top: 76px;
+            }
+        }
+        .step-ttl {
+            margin-top: 20px;
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: bold;
+            font-family: NotoSans;
+            text-align: center;
+            color: $green;
+            @include sp {
+                margin-top: 8px;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+        .under-line {
+            margin: 25px auto 0;
+            border: 1.5px solid $green;
+            width: 91px;
+            @include tb {
+                margin-top: 30rem;
+                width: 130rem;
+            }
+            @include sp {
+                display: none;
+            }
+        }
+        .steps-list {
+            margin: 45px auto 0;
+            @include md {
+                margin-top: 78px;
+                padding-left: 0;
+            }
+            .step-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include md {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .item-pack {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 451px;
+                    height: 131px;
+                    img {
+                        width: 100%;
+                    }
+                    @include tb {
+                        width: 902rem;
+                        height: 262rem;
+                    }
+                    @include md {
+                        width: 100%;
+                        height: auto;
+                        .cp-r {
+                            clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
+                        }
+                        .cp-l {
+                            clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
+                        }
+                    }
+                }
+                .item-content {
+                    padding-left: 54px;
+                    width: 450px;
+                    @include tb {
+                        padding-left: 80rem;
+                        width: calc( 100% - 982rem);
+                    }
+                    @include md {
+                        padding: 0 40px;
+                        margin-top: 15px;
+                        width: 100%;
+                    }
+                    .item-ttl {
+                        font-family: "HiraginoSans";
+                        font-weight: normal;
+                        font-size: 25px;
+                        letter-spacing: 0.05em;
+                        line-height: 34px;
+                        text-align: left;
+                        color: #65c195;
+                        @include sp {
+                            font-size: 20px;
+                        }
+                    }
+                    .item-desc {
+                        margin-top: 14px;
+                        font-family: "DNP ShueiGoKinStd";
+                        font-weight: normal;
+                        font-size: 14px;
+                        letter-spacing: 0.05em;
+                        line-height: 26px;
+                        text-align: left;
+                        color: #000;
+                    }
+                }
+            }
+            .vertical-line {
+                margin-top: 21px;
+                margin-left: 375px;
+                width: 0px;
+                height: 30px;
+                border: 1px solid #000;
+                @include pc {
+                    margin-left: 465rem;
+                }
+                @include tb {
+                    margin-left: 452rem;
+                }
+                @include md {
+                    display: none;
+                }
+            }
+            .mt-17 {
+                margin-top: 17px;
+                @include md {
+                    margin-top: 46px;
+                }
+            }
+        }
+    }
+}

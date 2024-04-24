@@ -1,0 +1,177 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.section-supplier {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background: $green;
+    @include sp {
+        padding-top: 7px;
+        padding-bottom: 54px;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 1200px;
+        color: #fff;
+        @include pc {
+            padding: 0 40px;
+        }
+        @include sp {
+            padding: 0 36px;
+        }
+        .supplier-pack {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 106px;
+            height: 106px;
+            @include sp {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .supplier-ttl {
+            margin-top: 15px;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+            font-weight: bold;
+            font-family: NotoSans;
+            @include sp {
+                margin-top: 0;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+        .ttl-desc {
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 29px;
+            font-family: "NotoSans";
+            font-weight: 500;
+            text-align: center;
+            @include md {
+                margin-top: 34px;
+                font-size: 17px;
+                line-height: 25px;
+            }
+            @include sp {
+                margin-top: 14px;
+                font-family: "HiraginoSans";
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+        .bottom-ttl {
+            margin-top: 63px;
+            font-family: "NotoSans";
+            font-weight: bold;
+            font-size: 30px;
+            letter-spacing: 0.1em;
+            color: #fff;
+            .small-ttl {
+                font-size: 22px;
+                margin-left: 25px;
+                @include sp {
+                    font-size: 8px;
+                    line-height: 12px;
+                    margin-left: 4px;
+                }
+            }
+            @include md {
+                margin-top: 33px;
+            }
+            @include sp {
+                margin-top: 17px;
+                font-size: 12px;
+            }
+        }
+        .supplier-desc {
+            margin-top: 37px;
+            display: flex;
+            justify-content: center;
+            .supplier-item {
+                width: 33.333333333333%;
+                font-family: "NotoSans";
+                font-weight: 100;
+                font-size: 24px;
+                letter-spacing: 0.1em;
+                color: #fff;
+                @include pc {
+                    font-size: 30rem;
+                }
+                @include md {
+                    width: 100%;
+                    font-size: 18px;
+                }
+                @include sp {
+                    font-family: "HiraginoSans";
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+            }
+            @include md {
+                flex-direction: column;
+            }
+            @include sp {
+                margin-top: 15px;
+            }
+        }
+        .supplier-button {
+            margin: 60px auto 0;
+            width: 279px;
+            height: 59px;
+            font-family: "NotoSans";
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+            border: 3px solid #fff;
+            border-radius: 20px;
+            background: transparent;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            color: #fff;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            padding-left: 35px;
+            @include pc {
+                margin: 80rem auto 0;
+                width: 500rem;
+                height: 100rem;
+                border-radius: 30rem;
+                font-size: 35rem;
+                line-height: 35rem;
+                padding-left: 60rem;
+            }
+            @include sp {
+                margin-top: 35px;
+                width: 188px;
+                height: 40px;
+                font-size: 12px;
+                line-height: 12px;
+                padding-left: 29px;
+            }
+            .play-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 19px;
+                width: 22px;
+                height: 22px;
+                @include pc {
+                    width: 30rem;
+                    height: 30rem;
+                    right: 30rem;
+                }
+                @include sp {
+                    width: 14px;
+                    height: 14px;
+                    right: 13px;
+                }
+            }
+        }
+    }
+}

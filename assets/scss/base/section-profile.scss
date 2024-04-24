@@ -1,0 +1,122 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.section-profile {
+    padding-bottom: 83px;
+    @include sp {
+        padding-bottom: 128px;
+    }
+    .container {
+        @include pc {
+            padding: 0 40px;
+        }
+        .profile-pack {
+            padding-top: 150px;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 106px;
+                height: 106px;
+                @include sp {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            @include sp {
+                padding-top: 160px;
+            }
+        }
+        .profile-ttl {
+            padding-top: 12px;
+            font-family: "NotoSans";
+            font-weight: bold;
+            font-size: 30px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            color: $green;
+            @include sp {
+                padding-top: 0px;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+        .under-line {
+            margin: 25px auto 0;
+            border: 1.5px solid $green;
+            width: 91px;
+            @include tb {
+                margin-top: 30rem;
+                width: 130rem;
+            }
+            @include sp {
+                display: none;
+            }
+        }
+        .profile-content {
+            margin-top: 83px;
+            @include sp {
+                margin-top: 42px;
+            }
+            .item {
+                display: flex;
+                justify-content: center;
+                @include sp {
+                    flex-direction: column;
+                }
+                .item-name {
+                    padding-left: 76px;
+                    display: flex;
+                    align-items: center;
+                    width: 23.6%;
+                    font-family: "NotoSans";
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: #313131;
+                    border: 1px solid #CECECE;
+                    border-right: none;
+                    background: #f7f7f7;
+                    @include pc {
+                        padding-left: 90rem;
+                    }
+                    @include sp {
+                        width: 100%;
+                        padding: 14px 13px;
+                        font-size: 14px;
+                        border: none;
+                    }
+                }
+                .item-desc {
+                    padding: 44px 121px;
+                    width: 76.4%;
+                    font-family: "NotoSans";
+                    font-size: 18px;
+                    color: #000;
+                    border: 1px solid #CECECE;
+                    border-left: none;
+                    .sp-show {
+                        display: none;
+                    }
+                    .small {
+                        font-size: 8px;
+                        line-height: 11px;
+                    }
+                    @include pc {
+                        padding-left: 120rem;
+                    }
+                    @include sp {
+                        width: 100%;
+                        font-family: "HiraginoSans";
+                        font-weight: normal;
+                        font-size: 10px;
+                        color: #505050;
+                        padding: 20px 11px;
+                        border: 1px solid #F7F7F7;
+                        .sp-show {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

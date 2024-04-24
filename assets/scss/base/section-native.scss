@@ -1,0 +1,110 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.section-native {
+    padding-top: 110px;
+    padding-bottom: 226px;
+    background-color: $green;
+    position: relative;
+    @include tb {
+        padding: 200rem 0 400rem;
+    }
+    @include sp {
+        padding-top: 49px;
+        padding-bottom: 110px;
+    }
+    .navtive-container {
+        max-width: 100%;
+        width: 1600px;
+        margin: 0 auto;
+        @include dt {
+            padding: 0 45px;
+        }
+        .ttl {
+            font-family: "NotoSans";
+            font-weight: bold;
+            font-size: 50px;
+            text-align: left;
+            color: #fff;
+            line-height: 67px;
+            @include tb {
+                font-size: 100rem;
+                line-height: 150rem;
+            }
+            @include sp {
+                text-align: center;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .under-yellow {
+        background: linear-gradient(transparent 80%, #B4EB5B 0%);
+    }
+    .ttl-small {
+        margin-top: 95px;
+        font-family: "NotoSans";
+        font-weight: bold;
+        font-size: 30px;
+        text-align: left;
+        color: #fff;
+        line-height: 40px;
+        // text-shadow: 2px 4px 5px black;
+        position: relative;
+        z-index: 999999;
+        @include tb {
+            margin-top: 100rem;
+            font-size: 80rem;
+            text-shadow: none;
+        }
+        .sp-hidden {
+            @include sp {
+                display: none;
+            }
+        }
+        @include sp {
+            margin-top: 27px;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+        }
+    }
+    .arrow-img {
+        margin-top: 9px;
+        display: none;
+        @include sp {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .desc {
+        margin-top: 37px;
+        font-family: "NotoSans";
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: left;
+        color: #fff;
+        // text-shadow: 2px 4px 5px black;
+        position: relative;
+        z-index: 999999;
+        @include tb {
+            text-shadow: none;
+        }
+        @include sp {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: normal;
+        }
+    }
+    .world-map {
+        position: absolute;
+        top: 240px;
+        right: 0;
+        @include tb {
+            position: initial;
+            margin-top: 50px;
+        }
+    }
+}

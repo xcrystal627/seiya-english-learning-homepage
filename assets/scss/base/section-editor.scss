@@ -1,0 +1,86 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.section-editor {
+    background: url('./../img/edit-background.png') center;
+    background-size: cover;
+    // height: 1032px;
+    padding-bottom: 115px;
+    @include sp {
+        padding-bottom: 60px;
+    }
+    .container {
+        @include pc {
+            padding: 0 30px;
+        }
+        @include sp {
+            padding: 0 15px;
+        }
+        .ttl-pack {
+            padding-top: 49px;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 106px;
+                height: 106px;
+            }
+            @include sp {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                padding-top: 40px;
+            }
+        }
+        .ttl-ttl {
+            padding-top: 12px;
+            font-size: 30px;
+            font-family: "NotoSans";
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            text-align: center;
+            color: #fff;
+            font-family: "NotoSans";
+            font-weight: bold;
+            @include sp {
+                padding-top: 12px;
+                font-size: 18px;
+            }
+        }
+        .editor-list {
+            margin-top: 80px;
+            @include sp {
+                margin-top: 42px;
+            }
+            .editor-items {
+                display: flex;
+                justify-content: center;
+                @include tb {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .item-pack {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: auto;
+                    }
+                }
+                .ml-14 {
+                    margin-left: 14px;
+                    @include tb {
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .mt-44 {
+                margin-top: 44px;
+                @include tb {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

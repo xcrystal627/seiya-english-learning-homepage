@@ -1,0 +1,145 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+$dot-color: #7AC8A2;
+// Dimensions
+$dot-size: 4px;
+$dot-space: 22px;
+.section-faq {
+    background: url('./../img/faq-background.png');
+    padding-top: 60px;
+    padding-bottom: 115px;
+    @include tb {
+        background: linear-gradient(90deg, $green ($dot-space - $dot-size), transparent 1%) center, linear-gradient($green ($dot-space - $dot-size), transparent 1%) center, $dot-color;
+        background-size: $dot-space $dot-space;
+    }
+    @include sp {
+        padding-top: 40px;
+    }
+    .container {
+        @include pc {
+            padding: 0 20px;
+        }
+        .faq-pack {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 106px;
+                height: 106px;
+                @include sp {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+        .faq-ttl {
+            margin-top: 20px;
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: bold;
+            font-family: NotoSans;
+            text-align: center;
+            color: #fff;
+            @include sp {
+                margin-top: 0px;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+        .faq-list {
+            margin-top: 92px;
+            @include sp {
+                margin-top: 44px;
+            }
+            .faq-items {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include tb {
+                    flex-direction: column;
+                }
+                .faq-item {
+                    width: 335px;
+                    height: 202px;
+                    background: #fff;
+                    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.43));
+                    @include sp {
+                        height: auto;
+                        padding-bottom: 20px;
+                    }
+                    .question {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        .q-sign {
+                            padding-left: 9px;
+                            font-family: しっぽり明朝;
+                            font-weight: bold;
+                            font-size: 41px;
+                            line-height: 60px;
+                            color: #3ca874;
+                        }
+                        .question-desc {
+                            padding: 0 7px;
+                            font-family: "HiraginoSans";
+                            font-size: 16px;
+                            line-height: 21px;
+                            color: #3ca874;
+                        }
+                    }
+                    .dotted-line {
+                        margin: 0 auto;
+                        width: 310px;
+                        height: 0px;
+                        background: transparent;
+                        border: 2px dotted #ccc;
+                    }
+                    .answer {
+                        margin-top: 15px;
+                        display: flex;
+                        justify-content: flex-start;
+                        // align-items: center;
+                        .a-sign {
+                            padding-left: 23px;
+                            font-family: しっぽり明朝;
+                            font-weight: bold;
+                            font-size: 27px;
+                            line-height: 27px;
+                            color: #15642d;
+                        }
+                        .answer-desc {
+                            padding-left: 8px;
+                            padding-right: 12px;
+                            // padding-top: 5px;
+                            font-family: "Hiragino Sans";
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #15642d;
+                        }
+                    }
+                }
+                .ml-98 {
+                    margin-left: 98px;
+                    @include pc {
+                        margin-left: 20rem;
+                    }
+                    @include tb {
+                        margin-left: 0;
+                        margin-top: 47px;
+                    }
+                    @include sp {
+                        margin-top: 21px;
+                    }
+                }
+            }
+            .mt-57 {
+                margin-top: 57px;
+                @include sp {
+                    margin-top: 21px;
+                }
+            }
+        }
+    }
+}
